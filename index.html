@@ -62,7 +62,7 @@
             </button>
         </div>
 
-        <script type="text/javascript">
+        <!-- <script type="text/javascript">
             var nav = document.querySelector('nav');
 
             window.addEventListener('scroll', function () {
@@ -72,7 +72,7 @@
                     nav.classList.remove('bg-dark', 'shadow');
                 }
             });
-        </script>
+        </script> -->
     </header>
     <!-- Secciones principales -->
     <!-- ¿Quienes somos? -->
@@ -80,8 +80,63 @@
 
     </section>
     <!-- Destacados con 4 cards -->
+    <section class="destacados">
+        <h3 class="text-white text-center">Destacados</h3>
+        <hr class="barrita">
+        <div class="container">
+            <div class="card" style="width: 18rem;">
+                <img src="assets/img/card1.jpg" class="card-img-top" alt="cordillera">
+                <div class="card-body">
+                    <h5>Lorem ipsum dolor sit amet</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        sed do euismod tempor incididunt ut labore et dolore magna aliqua</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="assets/img/card2.jpg" class="card-img-top" alt="desierto">
+                <div class="card-body">
+                    <h5>Consectetur adipisicing elit</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        sed do euismod tempor incididunt ut labore et dolore magna aliqua</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="assets/img/card3.jpg" class="card-img-top" alt="selva">
+                <div class="card-body">
+                    <h5>Sed do eiusmod tempor incididunt ut labore</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        sed do euismod tempor incididunt ut labore et dolore magna aliqua</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="assets/img/card4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5>Ut enim ad minim veniam</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        sed do euismod tempor incididunt ut labore et dolore magna aliqua</p>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Formulario -->
-
+    <section class="fondo-form">
+        <h3 class="text-white text-center">Contacto</h3>
+        <hr class="barrita">
+        <div class="container  text-white">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                <input type="name" class="form-control" id="exampleFormControlInput1">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput2" class="form-label">Asunto</label>
+                <input type="name" class="form-control" id="exampleFormControlInput2">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
+            </div>
+        </div>
+    </section>
     <!-- Footer -->
     <Footer>
 
