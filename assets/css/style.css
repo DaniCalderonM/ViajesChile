@@ -13,9 +13,19 @@ body {
 
 
 .tamaño-svc {
-    width: 6%;
+    width: 50px;
 }
 
+.navbar {
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
 
 
 .text-white {
