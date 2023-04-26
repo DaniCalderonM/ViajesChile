@@ -18,28 +18,38 @@
 
 <body>
     <!-- Nav -->
-
-    <!-- Header carrusel que muestre las imagenes principales del sitio-->
-    <header>
-        <nav class="navbar navbar-expand-lg sticky-top" data-bs-theme="dark">
-            <div class="container">
-                <a class="navbar-brand" href="#"><img class="tamaño-svc" src="assets/img/viajes.svg"
-                        alt="Logo Viajes Chile">Viajes Chile</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav ms-auto">
-                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                        <a class="nav-link" href="#">Quienes Somos</a>
-                        <a class="nav-link" href="#">Destacados</a>
-                        <a class="nav-link" href="#">Contacto</a>
-                    </div>
+    <nav class="navbar navbar-expand-lg sticky-top" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img class="tamaño-svc" src="assets/img/viajes.svg"
+                    alt="Logo Viajes Chile">Viajes Chile</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    <a class="nav-link" href="#quienessomos">Quienes Somos</a>
+                    <a class="nav-link" href="#destacados">Destacados</a>
+                    <a class="nav-link" href="#contacto">Contacto</a>
                 </div>
             </div>
-        </nav>
+        </div>
+    </nav>
+
+    <script type="text/javascript">
+        var nav = document.querySelector('nav');
+
+        window.addEventListener('scroll', function () {
+            if (window.pageYOffset > 100) {
+                nav.classList.add('bg-transparent');
+            } else {
+                nav.classList.remove('bg-transparent');
+            }
+        });
+    </script>
+    <!-- Header carrusel que muestre las imagenes principales del sitio-->
+    <header>
         <div id="carouselExample" class="carousel slide">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -62,30 +72,92 @@
             </button>
         </div>
 
-        <!-- <script type="text/javascript">
-            var nav = document.querySelector('nav');
-
-            window.addEventListener('scroll', function () {
-                if (window.pageYOffset > 100) {
-                    nav.classList.add('bg-dark', 'shadow');
-                } else {
-                    nav.classList.remove('bg-dark', 'shadow');
-                }
-            });
-        </script> -->
     </header>
-    <!-- Secciones principales -->
     <!-- ¿Quienes somos? -->
-    <section>
+    <section class="qs d-none d-sm-block">
+        <h3 class="text-white text-center pt-4 pb-2" id="quienessomos">¿QUIÉNES SOMOS?</h3>
+        <hr>
+        <div class="container">
+            <div class="row justify-content-center text-white">
+                <div class="col-4">
+                    <h4 class="text-center fnd"><i class="fa-solid fa-plane"></i></h6>
+                        <p class="tg">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Quos molestias at
+                            consequatur. Harum sint atque incidunt
+                            soluta libero modi nihil cumque laudantium
+                            asperiores saepe. Alias placeat dolorem tempora
+                            necessitatibus magni?
+                            Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Quos molestias at
+                            consequatur. Harum sint atque incidunt
+                            soluta libero modi nihil cumque laudantium
+                            asperiores saepe. Alias placeat dolorem tempora
+                            necessitatibus magni?
+                            Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Quos molestias at
+                            consequatur. Harum sint atque incidunt
+                            soluta libero modi nihil cumque laudantium
+                        </p>
+                </div>
+                <div class="col-4">
+                    <p class="tg">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Quos molestias at
+                        consequatur. Harum sint atque incidunt
+                        soluta libero modi nihil cumque laudantium
+                        asperiores saepe. Alias placeat dolorem tempora
+                        necessitatibus magni?
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Quos molestias at
+                        consequatur. Harum sint atque incidunt
+                        soluta libero modi nihil cumque laudantium
+                        asperiores saepe. Alias placeat dolorem tempora
+                        necessitatibus magni?
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Quos molestias at
+                        consequatur. Harum sint atque incidunt
+                        soluta libero modi nihil cumque laudantium
+                    </p>
+                    <h4 class="text-center fnd"><i class="fa-solid fa-mountain"></i></h4>
+                </div>
+                <div class="col-4">
+                    <h4 class="text-center fnd"><i class="fa-solid fa-route"></i></h4>
+                    <p class="tg">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Quos molestias at
+                        consequatur. Harum sint atque incidunt
+                        soluta libero modi nihil cumque laudantium
+                        asperiores saepe. Alias placeat dolorem tempora
+                        necessitatibus magni?
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Quos molestias at
+                        consequatur. Harum sint atque incidunt
+                        soluta libero modi nihil cumque laudantium
+                        asperiores saepe. Alias placeat dolorem tempora
+                        necessitatibus magni?
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Quos molestias at
+                        consequatur. Harum sint atque incidunt
+                        soluta libero modi nihil cumque laudantium
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("h4").click(function () {
+                    $('.tg').toggle("slow");
+                });
+            });
+        </script>
 
     </section>
     <!-- Destacados con 4 cards -->
-    <section class="destacados p-5">
+    <section class="destacadoss p-4 col-12" id="destacados">
         <h3 class="text-white text-center pt-4 pb-2">DESTACADOS</h3>
-        <hr class="barrita">
-        <div class="container ">
-            <div class="d-flex justify-content-center">
-                <div class="col-sm-3">
+        <hr>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-3 col-sm-3">
                     <div class="card" style="width: 19rem;">
                         <img src="assets/img/card1.jpg" class="card-img-top" alt="cordillera">
                         <div class="card-body">
@@ -95,7 +167,7 @@
                         </div>
                     </div>
                 </div>
-                <div class=" col-sm-3">
+                <div class="col-3 col-sm-3">
                     <div class="card" style="width: 19rem;">
                         <img src="assets/img/card2.jpg" class="card-img-top2" alt="desierto">
                         <div class="card-body">
@@ -105,7 +177,7 @@
                         </div>
                     </div>
                 </div>
-                <div class=" col-sm-3">
+                <div class="col-3 col-sm-3">
                     <div class="card" style="width: 19rem;">
                         <img src="assets/img/card3.jpg" class="card-img-top" alt="salar">
                         <div class="card-body">
@@ -115,7 +187,7 @@
                         </div>
                     </div>
                 </div>
-                <div class=" col-sm-3">
+                <div class="col-3 col-sm-3">
                     <div class="card" style="width: 19rem;">
                         <img src="assets/img/card4.jpg" class="card-img-top" alt="selva">
                         <div class="card-body">
@@ -130,8 +202,8 @@
     </section>
     <!-- Formulario -->
     <section class="fondo-form p-5">
-        <h3 class="text-white text-center pt-4">CONTACTO</h3>
-        <hr class="barrita">
+        <h3 class="text-white text-center" id="contacto">CONTACTO</h3>
+        <hr>
         <div class="container  text-white">
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Nombre</label>
@@ -145,12 +217,19 @@
                 <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
             </div>
-            <button type="button" class="btn btn-info text-white">Enviar</button>
+            <button type="button" class="btn btn-info text-white" id="enviar">Enviar</button>
         </div>
+
+        <script>
+            $("#enviar").click(function () {
+                alert("Su mensaje fue enviado correctamente~");
+            });
+        </script>
+
     </section>
     <!-- Footer -->
-    <Footer class="pb-3 pt-4 ">
-        <div class="container col-12">
+    <footer class="pb-3 pt-4">
+        <div class="container">
             <div class="row  ms-5 ps-5">
                 <div class="col-5 ps-5">
                     <h4 class="text-white ps-5">VIAJES CHILE</h4>
@@ -169,7 +248,7 @@
                         <div class="col-1">
                             <i class="fa-brands fa-square-facebook fa-2x"></i>
                         </div>
-    </Footer>
+    </footer>
     <script src="https://kit.fontawesome.com/8bcc232b0f.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
         integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
